@@ -16,6 +16,4 @@ RUN chgrp -R 0 /usr/share/nginx && \
     chmod -R g=u /var/run && \
     chmod a+x /usr/bin/start.sh
 
-STOPSIGNAL SIGTERM
-
 CMD ["/usr/bin/start.sh"]
