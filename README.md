@@ -20,7 +20,7 @@ Imagem docker utilizada para servir frontend no padrão _Single Page Application
 ```
 FROM tstlabs/frontend:latest
 
-ENV FRONTEND_ENV_VISIVEL="Variável visível no arquivo __env.js servidor no root do servidor web"
+ENV FRONTEND_ENV_VISIVEL="Variável visível no arquivo /__env.js do servidor web"
 ENV HIDDEN_ENV="Variável escondida"
 
 ADD build /usr/share/nginx/html/
