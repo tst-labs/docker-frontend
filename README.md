@@ -15,6 +15,9 @@ Imagem docker utilizada para servir frontend no padrão _Single Page Application
   essas variáveis de ambiente sejam injetadas será necessário importar esse
   arquivo.
 
+- `index.html` e `__env.js` possuem políticas de nunca serem mantidos em
+  _cache_.
+
 ## Exemplo
 
 ```
