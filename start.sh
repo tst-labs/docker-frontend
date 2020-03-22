@@ -6,4 +6,8 @@ ENV_FILE=/usr/share/nginx/html/__env.js
 echo "window.env = {};" > $ENV_FILE
 env | grep FRONTEND_ENV_ | sed -e 's/^FRONTEND_ENV_/window.env["/' | sed -e 's/$/";/' | sed -e 's/=/"\]="/' >> $ENV_FILE
 
+echo "Environment file"
+cat $ENV_FILE
+echo "---"
+
 exec nginx -g "daemon off;"
