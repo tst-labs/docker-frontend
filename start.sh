@@ -1,6 +1,6 @@
 #!/bin/sh
-
-ENV_FILE=/usr/share/nginx/html/__env.js
+mkdir -p /tmp/wwwenv
+ENV_FILE=/tmp/wwwenv/__env.js
 
 # Qualquer variável que iniciar com FRONTEND_ENV_ será adicionada em window.env.
 echo "window.env = {};" > $ENV_FILE
