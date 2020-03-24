@@ -14,7 +14,6 @@ RUN chgrp -R 0 /usr/share/nginx && \
     chmod -R g=u /var/cache/nginx && \
     chgrp -R 0 /var/run && \
     chmod -R g=u /var/run && \
-    chown 777 /usr/share/nginx/html && \
     chmod a+x /usr/bin/start.sh
 
 CMD ["/usr/bin/start.sh"]
