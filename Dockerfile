@@ -5,6 +5,8 @@ LABEL version="1.0.0"
 
 EXPOSE 8080
 
+RUN apk -U upgrade
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY start.sh /usr/bin/start.sh
 
